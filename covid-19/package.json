@@ -1,0 +1,24 @@
+{
+  "name": "covid-19",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index-dev.html",
+    "build": "parcel build index-dev.html -d ./dashboard --out-file index.html"
+  },
+  "keywords": [],
+  "author": "Davide Bruzzone <davide@bitwisesamurai.com> (http://bitwisesamurai.com/)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "d3": "^5.15.0",
+    "papaparse": "^5.1.1",
+    "preact": "^10.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "parcel-bundler": "^1.12.4"
+  }
+}

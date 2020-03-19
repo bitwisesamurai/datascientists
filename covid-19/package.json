@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index-dev.html",
-    "build": "parcel build index-dev.html --out-dir ./dashboard --out-file index.html --public-url ./dashboard/"
+    "build": "parcel build index-dev.html --out-dir ./dashboard --out-file index.html --public-url /covid-19/dashboard/"
   },
   "keywords": [],
   "author": "Davide Bruzzone <davide@bitwisesamurai.com> (http://bitwisesamurai.com/)",

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "parcel index-dev.html",
-    "build": "parcel build index-dev.html --out-dir ./dashboard --out-file index.html --public-url ./"
+    "clean": "rimraf dashboard/*",
+    "build": "npm run clean && parcel build index-dev.html --out-dir ./dashboard --out-file index.html --public-url ./"
   },
   "keywords": [],
   "author": "Davide Bruzzone <davide@bitwisesamurai.com> (http://bitwisesamurai.com/)",
@@ -21,6 +22,7 @@
     "@babel/plugin-transform-react-jsx": "^7.8.3",
     "jest": "^25.1.0",
     "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
     "sass": "^1.26.3"
   }
 }

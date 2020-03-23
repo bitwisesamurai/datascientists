@@ -1,0 +1,72 @@
+body
+  margin: 0
+
+#charts
+  .container
+    display: flex
+
+    flex-direction: column
+
+    height: calc(100vh - 100px)
+
+    #infected
+      flex: 2
+
+    #died, #recovered
+      flex: 1
+
+#controls
+  position: relative
+
+  padding-left: 50px
+
+  height: 100px
+
+.control-container
+  position: absolute
+
+  top: 50%
+  transform: translateY(-50%)
+
+$blue: #1471ff
+
+.tab
+  li
+    &.tab-item
+      color: $blue
+
+      a:hover
+        color: $blue
+
+    &.tab-item.active > a
+      color: $blue
+      border-bottom-color: $blue
+
+$infected: #ff8a14
+$died: #ff1414
+$recovered: #14ff14
+
+.line
+  fill: none
+  stroke-width: 3
+
+  &.infected
+    stroke: $infected
+
+  &.died
+    stroke: $died
+
+  &.recovered
+    stroke: $recovered
+
+.dot
+  stroke: #fff
+
+  &.infected
+    fill: $infected
+
+  &.died
+    fill: $died
+
+  &.recovered
+    fill: $recovered

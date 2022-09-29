@@ -13,7 +13,7 @@
   "author": "Davide Bruzzone <davide@bitwisesamurai.com> (http://bitwisesamurai.com/)",
   "license": "GPL-3.0",
   "dependencies": {
-    "d3": "^5.15.0",
+    "d3": "^7.6.1",
     "papaparse": "^5.1.1",
     "preact": "^10.3.4"
   },
